@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23025615874991676}
   - component: {fileID: 65639045984733178}
   - component: {fileID: 114642687957638446}
+  - component: {fileID: 114125660034871222}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -52,13 +53,13 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -84,7 +85,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1006581782433138}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!65 &65639045984733178
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -97,6 +98,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114125660034871222
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1006581782433138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01e824797d9821a439bd15d5e9ddb547, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 20
+  matureAfter: 5
+  reproductionPause: 2
+  young: {fileID: 2100000, guid: 34654dcfa57c3984cb732fc49a140897, type: 2}
+  ready: {fileID: 2100000, guid: 60cfa88eb68ef0242a88804dedefbc20, type: 2}
+  notReady: {fileID: 2100000, guid: 718428b39cfd5d94aa26849de23164a2, type: 2}
+  individual: {fileID: 1006581782433138}
+  canOnlyMove: 0
 --- !u!114 &114642687957638446
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -109,5 +129,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementTime: 2
-  lifeTime: 40
-  matureAfter: 10

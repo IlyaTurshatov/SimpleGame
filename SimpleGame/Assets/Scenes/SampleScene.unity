@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   population: 10
-  fieldSize: {x: 20, y: 20}
+  fieldSize: {x: 2, y: 2}
   individual: {fileID: 1006581782433138, guid: a634b8cdd35eaf044a83a684dc77e340, type: 2}
 --- !u!20 &282840813
 Camera:
@@ -347,7 +347,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1948827216}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalPosition: {x: 0, y: -0.6, z: 0}
   m_LocalScale: {x: 4, y: 1, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
