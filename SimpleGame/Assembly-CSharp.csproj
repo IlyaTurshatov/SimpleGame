@@ -46,9 +46,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\LifeCycle.cs" />
-     <Compile Include="Assets\Movement.cs" />
-     <Compile Include="Assets\Spawner.cs" />
+     <Compile Include="Assets\Scripts\LifeCycle.cs" />
+     <Compile Include="Assets\Scripts\Movement.cs" />
+     <Compile Include="Assets\Scripts\Spawner.cs" />
+     <Compile Include="Assets\Scripts\Statistics.cs" />
  <Reference Include="Unity.PackageManagerUI.Editor">
  <HintPath>C:/Users/tui/Downloads/SimpleGame/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
